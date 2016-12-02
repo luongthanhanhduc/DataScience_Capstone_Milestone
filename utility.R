@@ -89,7 +89,7 @@ preproccess <- function(input_file, output_file) {
 get_ngrams_dist <- function(file_list, n) {
   word_dist <- data.frame(ngram = c(), freq = c())
   for (input_file in file_list) {
-    print(input_file)
+    #print(input_file)
     read_con <- file(input_file, "rt")
     while (TRUE) {
       lines <- readLines(read_con, 50000) # read 50000 line at a time
