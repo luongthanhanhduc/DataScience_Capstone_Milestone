@@ -66,11 +66,11 @@ p2 <- ggplot(data_summary, aes(x = topic, y = sample_rows)) + geom_bar(stat = "i
   ggtitle("# of rows in sampled dataset")
 
 p3 <- ggplot(data_summary, aes(x = topic, y = total_words)) + geom_bar(stat = "identity") + 
-  ylab("total number of rows") +
+  ylab("total number of words") +
   ggtitle("# of words in original dataset")
 
 p4 <- ggplot(data_summary, aes(x = topic, y = sample_words)) + geom_bar(stat = "identity") + 
-  ylab("total number of rows") +
+  ylab("total number of words") +
   ggtitle("# of words in sampled dataset")
 
 multiplot(p1, p2, p3, p4, cols=2)
